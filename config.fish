@@ -11,7 +11,9 @@ end
 
 set PATH ~/.linuxify ~/.cargo/bin /opt/homebrew/opt/llvm/bin /opt/homebrew/opt/llvm@15/bin /opt/homebrew/bin /opt/bin ~/.local/bin ~/go/bin $PATH
 
-source $HOME/.cargo/env.fish
+if test -e $HOME/.cargo/env.fish
+    source $HOME/.cargo/env.fish
+end
 
 setenv EDITOR nvim
 setenv PAGER most
